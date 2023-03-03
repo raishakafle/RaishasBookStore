@@ -33,7 +33,13 @@ Added a comment line 65 on Startup.cs
 
 Back to working on the project..
 
+1523
 
+Went up to bootswatch.com, where I looked up for really cool themed templates for the project. 
+
+I went up with the Theme "Flatly", then I went up to the roots folder > lib > bootstrap > dist > css. 
+
+I updated the original bootstrap file to the name bootstrap_bk.css while I added a new bootstrap file to the folder. 
 
 
 
