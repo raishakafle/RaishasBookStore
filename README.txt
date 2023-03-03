@@ -17,13 +17,23 @@ Tested to see if the application's working, THANKFULLY IT IS!!
 
 Action Items: 
 
--Modify the navigation
+-Modify the navigation(just like assignment 1)
 
--Made some changes to the copyright. 
+-Made some changes to the copyright. (from static to dynamic)
 
 1516
 
 Made some changes at the Welcome page, tested it verified it is still working. 
 
 Added a comment line 65 on Startup.cs
+
+2023-03-03 
+
+1514
+
+Back to working on the project..
+
+
+
+
 
