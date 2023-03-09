@@ -41,6 +41,15 @@ I went up with the Theme "Flatly", then I went up to the roots folder > lib > bo
 
 I updated the original bootstrap file to the name bootstrap_bk.css while I added a new bootstrap file to the folder. 
 
+2023-03-09
+
+1443
+
+After I updated the older bootstrap file, and created a newer one. I made some changes in the Layout.cshtml file. I made changes inside header> nav with a new code that contained the bootstrap code 
+and would work accordingly.
+
+
+
 
 
 
