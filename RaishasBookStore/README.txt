@@ -45,8 +45,16 @@ I updated the original bootstrap file to the name bootstrap_bk.css while I added
 
 1443
 
-After I updated the older bootstrap file, and created a newer one. I made some changes in the Layout.cshtml file. I made changes inside header> nav with a new code that contained the bootstrap code 
-and would work accordingly.
+After I updated the older bootstrap file, and created a newer one. I made some changes in the Layout.cshtml file. I made changes inside header> nav with a new code that contained the bootstrap code and would work accordingly.
+
+1503
+
+Then, I updated the site css file, and updated that with the newer css from the theme i chose Flatly. 
+
+1557
+
+I then made some changes in the color section to the header and footer in the Layout.cshtml page. I then committed and pushed all the files to GitHub 
+and I am all set for now!
 
 
 
