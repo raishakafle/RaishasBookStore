@@ -1,13 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using RaishasBookStore.Models;
+using RaishasBookStore.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace RaishasBookStore.Controllers
+namespace RaishasBookStore.DataAccess.Controllers
 {
     public class HomeController : Controller
     {
