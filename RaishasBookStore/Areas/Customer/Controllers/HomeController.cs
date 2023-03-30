@@ -8,8 +8,10 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace RaishasBookStore.DataAccess.Controllers
+namespace RaishasBookStore.Areas.Customer.Controllers
 {
+    [Area("Customer")]
+
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
