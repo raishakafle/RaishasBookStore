@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RaishasBooks.DataAccess.Repository.IRepository
 {
-    interface ICategoryRepository
+    public interface ICategoryRepository
     {
         void Update(Category category);
     }
