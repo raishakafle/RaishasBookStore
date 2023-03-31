@@ -116,6 +116,50 @@ delete Data and Models.
 I then edited the HomeController.cs file to explicitly define that the controller is in the Customer 
 Area. I moved Views into Home and then modified the HomeController namespace. 
 
+I modified the _ViewStart.cshtml to reflect the new path, then ran the application to see if it was 
+still working, which it was so I moved on to adding a new ADMIN area in thbe Areas file. 
+
+I added the proper Views file, and the deleted the Data and Models Folder.
+
+I deleted the controllers folder, the updated the GitHub Repository for my new changes in the applpication.
+
+Assignment-2 
+	
+	Part II
+
+	2023-03-26
+
+1214
+
+First I built the application to see if it was still working, which it was of cource. Then, I created 
+the migrations file, modified the database name and saved. 
+
+Using the NuGet Package Manager Console, I added the Migration file. 
+20230330215833_AddDefaultIdentityMigrationDesign.cs
+
+Moving on to update the database through the PM Console, then I ran the application.
+
+1223
+
+I added a new table to the DB by creating a Category Model and push it to the DB, then
+I added a new class file to the .Models project which I mmodified.
+
+Then, I added the migration file via PM Console, updated the database confirmed
+the new Categories table via the SQL SOE and pushed commits. 
+
+1232
+
+After I created the Category.cs file, I added it to the ApplicationDbContext. 
+I added a new folder named 'Repository', and added an 'IRepository' folder inside it.
+
+Also added, a folder named IRepository.cs an interface, to the folder itself. After which,
+I modifies it because, it can be used on the Category class to do all the CRUD operations.
+
+
+
+
+
+ 
 
 
 
