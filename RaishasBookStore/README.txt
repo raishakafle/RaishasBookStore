@@ -85,6 +85,26 @@ deleted all of the Class1.cs files from the three individual folders.
 
 1645
 
+I moved the Models into Books.Model where I deleted the original project. I then modified Views/Shared/
+Error.cshtml.
+
+I had to then, rename the Models folder to ViewModels, and change the ErrorViewModels.cs namespace and
+the .ModelsViewModels file. 
+
+I ran the project to check and see if it was still working.
+Thankfully, it was!
+
+I then modified the startup.cs with 'AddContext' with the using statement. 
+
+1655
+
+Into the utility project, I created a static details class, called SD.cs. Moving on to, modifying the 
+properties of the class. And then, I added the project reference to the main project. 
+
+And into the DataAccess project I added project references to Models and Utility. 
+
+
+
 
 
 
