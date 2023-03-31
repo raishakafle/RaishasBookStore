@@ -18,8 +18,15 @@ namespace RaishasBooks.DataAccess.Repository
 
         public void Update(Category category)
         {
+
+            // use .NET LINQ to retrieve the first or default category object, 
+
+            // Then pass the id as a generic entity which matches the cateogry ID.
             var objFromDb = _db.Categories.FirstOrDefault(s => s.Id == category.Id);
+
             if (objFromDb == null)
+            // Save changes if not null
+
             {
                 objFromDb.Name = category.Name;
                 // _db.SaveChanges();

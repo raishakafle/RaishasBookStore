@@ -34,13 +34,13 @@ namespace RaishasBookStore.Areas.Admin.Controllers
             return View(category); 
         }
 
-
+        // Use HTTP POST to define the post-action method.
         [HttpPost]
         [ValidateAntiForgeryToken]
 
         public IActionResult Upsert(Category category)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid)  // Checks all validations in the model (eg: Name Required) to increase security.
             {
                 if (category.Id == 0)
                 {
@@ -53,13 +53,14 @@ namespace RaishasBookStore.Areas.Admin.Controllers
                 }
 
                 _unitOfWork.Save();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index));  //To see all the categories
+                return RedirectToAction(nameof(Index));  
             }
 
             return View(category);
         }
 
-
+        // API calls here
         #region API CALLS
         [HttpGet]
         public IActionResult GetAll()

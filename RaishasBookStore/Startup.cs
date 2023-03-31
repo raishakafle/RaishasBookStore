@@ -35,6 +35,7 @@ namespace RaishasBookStore
             services.AddDefaultIdentity<IdentityUser>()  //removed   options => options.SignIn.RequireConfirmedAccount = true
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
+            //removed 'options => options.SignIn.RequiredConfirmedAccount = true'
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews();
             services.AddRazorPages();
