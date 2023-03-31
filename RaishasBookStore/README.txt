@@ -56,6 +56,7 @@ Then, I updated the site css file, and updated that with the newer css from the 
 I then made some changes in the color section to the header and footer in the Layout.cshtml page. I then committed and pushed all the files to GitHub 
 and I am all set for now!
 
+
 2023-03-24
 1549
 
@@ -68,7 +69,28 @@ created two more files in the same way where I named them, Raishasbook.Models an
 Later, I took the main data folder from the solution folder and copied it into the respective classes. After which of course I am checking all of the files and folders if they are correct and
 as same as the original one running in order. 
 
-Assignment 2
+ After which I added I added the additional style sheets and script to the _Layout.cshtml file.
+ And then, I went on to add a dropdown to the Navbar.
+
+ I changed 'Dropdown to 'Content Management'.
+
+1620
+
+I added three new projects (.NET Core Class Library ) into the applicastion.
+After which I copied the data folder into the application, deleted the original file. 
+Went on to install Microsoft.EntityFrameworkCore.Relational and Core.SqlServer packages onto the program.
+
+I continued on to delete the Migrations folder. I then installed the NuGet packages. Also,
+deleted all of the Class1.cs files from the three individual folders.
+
+1645
+
+
+
+
+
+
+
 
 
 
