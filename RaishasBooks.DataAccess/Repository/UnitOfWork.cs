@@ -12,7 +12,7 @@ namespace RaishasBooks.DataAccess.Repository
 
         private readonly ApplicationDbContext _db; //the using statement
 
-        private UnitOfWork(ApplicationDbContext db) // constructor to use DI and inject in to the repositories
+        public UnitOfWork(ApplicationDbContext db) // constructor to use DI and inject in to the repositories
         {
             _db = db;
             Category = new CategoryRepository(_db);
