@@ -103,6 +103,20 @@ properties of the class. And then, I added the project reference to the main pro
 
 And into the DataAccess project I added project references to Models and Utility. 
 
+1720
+
+Later on I went on with adding a "Customers area to Areas. Then, changed the routes in the Startup.cs 
+just like the one outlined in the ScaffoldingReadMe.txt file. 
+
+Moving on to, switch the HomeController.cs to the Area>Customer>Controller folder and
+delete Data and Models.
+
+1734
+
+I then edited the HomeController.cs file to explicitly define that the controller is in the Customer 
+Area. I moved Views into Home and then modified the HomeController namespace. 
+
+
 
 
 
