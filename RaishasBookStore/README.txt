@@ -155,6 +155,77 @@ I added a new folder named 'Repository', and added an 'IRepository' folder insid
 Also added, a folder named IRepository.cs an interface, to the folder itself. After which,
 I modifies it because, it can be used on the Category class to do all the CRUD operations.
 
+I got some erros in the following file, so used the using statement View the potential fixes and 
+implement interface. 
+
+I modified the code to create the constructors  and de[endency injection (DI).
+
+1253
+
+I then created individual repos for catgory and all potential models top be added in the future. 
+The files included: 
+	CategporyRepository.cs
+	ICategporyRepository.cs
+
+
+I then modified the CategporyRepository.cs file and the ICategporyRepository.cs interface as well.
+
+Using .NET LINQ  I retrieved the first or default category object, I then passed the id as a generic entity 
+which matchesd the category ID. 
+
+JUST A REMINDER THAT I RAN THE PROGRAM TO CHECK AND SEE IF IT WAS STILL WORKING, AND IT WAS!! :)
+
+I then added a new interface in the IRepository folder- ISP_Calls.cs- that extends IDisposable. 
+Added a class  named SP_Call.cs in the repository folder. I then, added a connection to the database
+and then mupdates the im,plementatiopn of the ISP_Call interface. 
+
+1352
+
+Moving on, I added a new interface (IUnitOfWork) to the IRepository folder, and update the code. 
+
+I then added a class wheree i implemented the interface mentioned above. Then modified the code, 
+made it accessible by the project. 
+
+1421
+
+I added a new MVC Controler- Empt inside Areas/Admin which i named as, CategoryController.cs. 
+I then modified the code because I needed to access the IunitOfWork from the .DataAccess project and the
+IRepository folder. 
+
+I added a new folder in the Areas/Views with the same name as the Controller. I added a new Index view
+to the folder. 
+
+Then, in the _Layout.cshtml, I mocved the "Category", link to the Content Management frop-down. 
+
+I had some erros in having to include the icons, so I decided i would work on it later. 
+
+
+I modified the UpSert.cshtml file, where I added the asp-action to the Index.cshtml page and ran the
+application. I then, navigated to the Category> Create New category.
+
+I modified the Uposert.cshtml file title so TITLE now uses the @title variable. Added the @section call 
+to Scripts to validate input. 
+
+2023-03-30
+		
+	 1342
+
+I created an Upsert POST action method in the CategoryController.cs file. I removed some methods in the 
+CategoryRepository.cs and moved the _unit OfWork.Save() method with the return. 
+
+Furthermore, I added the API (Application Programming Interface) call for HTTPDelete with a delete method
+in category.js to add functionality to the application and call the API. 
+
+I added the delete functionality in category.js with incuding the onclick event to the Delete function.
+
+I added the (Delete)url function code. 
+
+Time to see what the application looks like for the time being :\
+
+Everything else works perfectly fine, but the data entered by the user into the table is not working, 
+where the data has been stored but it jusdt does not display the database. 
+
+
 
 
 
