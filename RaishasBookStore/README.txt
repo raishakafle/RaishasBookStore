@@ -226,6 +226,17 @@ Everything else works perfectly fine, but the data entered by the user into the 
 where the data has been stored but it jusdt does not display the database. 
 
 
+2022-04-10
+4:39
+
+I create Cover Type CRUD with the exact same methods used for Category CRUD
+Then Added CoverType.cs in the Model’s folder
+and added CoverType Model ID, Name.
+
+
+
+
+
 
 
 
