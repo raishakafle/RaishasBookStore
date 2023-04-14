@@ -115,5 +115,36 @@ I encountered some errors in the file, so I used the using statement to view pot
 I modified the code to create the constructors and dependency injection (DI).
 
 
+first task was creating a Cover Type CRUD with the same methods used for Category CRUD, followed by adding CoverType.cs to the
+Models folder, which included CoverType Model, ID and Name.
+
+Next, a CoverType was added to the Repository, CoverTypeRepository Class and ICoverTypeRepository Interface, and CoverType to
+UnitOfWork and IUnitofWork. The CoverType was then pushed to the database, which involved creating migration and updating the DB.
+
+The Product class was added to the .Models project, followed by adding the code to build the blueprint of this class, ensuring it is
+public, and resolving any errors. The next step was adding a reference to the new Products piece to the database in the
+ApplicationDbContext.cs file. 
+
+In the PM Console, the add-migration command for an 'addProductToDb' migration and update-database were run. The Product
+class was then updated so that Title, ISBN and Author are required, followed by creating a new migration
+(addValidationToProduct) and updating the database.
+
+
+
+After this, Product was added to the Repository and IProductRepository Interface, followed by adding ProductRepository
+Class, and adding Product to UnitOfWork and IUnitofWork. Building and checking for errors, which thankfully revealed
+no errors, led to the application being pushed to GitHub.
+
+
+
+The next task was starting up with Part 3, 3.2 Product CRUD, which involved adding the Product Controller to the
+Areas > Admin > Controllers in order to perform CRUD operations. The IWebHostEvironment call and its using statement 
+were added to the Microsoft.AspNetCore.Hosting.
+
+
+
+A ViewModel was created in the Models project to hold the Product object and selected the list for Category and CoverType.
+The ProductVM class was then modified so that it is public, and the Microsoft.AspNetCore.Mvc.ViewFeatures package was installed.
+
 
 
