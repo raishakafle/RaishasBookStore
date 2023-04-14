@@ -283,9 +283,45 @@ Also adding ProductRepository Class.I Then added Product to UnitOfWork and IUnit
 After all this I Built and checked for errors, Thankfully, no errors so I pushed it to GitHub.
 
 
+1443
+
+Staring up with Part 3
+3.2 Product CRUD
+
+Strarting up with adding Product Controller to the Areas > Admin > Controllers in order to perform the CRUD operations.
+I then add4d the IWebHostEvironment call and its using statement to the Microsoft.AspNetCore.Hosting.
+
+Then, I Created a ViewModel in the Models project to hold the Product object and selected the list for Category and CoverType.
 
 
-*Product Controller / JS / Index view and Upsert View / Post / Action to follow
+1645
+
+BACK AFTER A SHORT BREAK! 
+
+I resumed with modifying the ProductVM class so it is public and then, I intalled the Microsoft.AspNetCore.Mvc.ViewFeatures package.
+
+Then I Modified the ProductController so the IActionResult Upsert calls to the ProductVM view model, then included the using statements
+to the ViewModels folder and Microsoft.AspNetCore.Mvc.Rendering.
+
+I commented out the Upsert post method for now as for the tutorial. Then, I modified the API call to include the Category and CoverType properites.
+
+Moving on, I added an Index view. Copied the Index.cshtml code from Views/Category and modified to the Product List header,
+Created a New Product and added the following properties 
+– Title / ISBN / Price / Author / Category and referenced a new product.js file.
+Where, my js file has still not been working yet but decided to fix it as I go through the project so MOVING ON!
+
+1720
+
+I then Copied/Pasted the category.js and renamed the file to product.js.
+I also Modified the _Layout.cshtml to added a new link to Product.
+
+I Ran the application to see if it was still working, and it was. 
+
+Pushing and updating everything to GitHub, abd closing up the application for now. 
+
+
+
+
 
 
 
