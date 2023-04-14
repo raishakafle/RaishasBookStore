@@ -147,4 +147,21 @@ A ViewModel was created in the Models project to hold the Product object and sel
 The ProductVM class was then modified so that it is public, and the Microsoft.AspNetCore.Mvc.ViewFeatures package was installed.
 
 
+The ProductController was modified so that the IActionResult Upsert calls to the ProductVM view model, and using statements
+were included to the ViewModels folder and Microsoft.AspNetCore.Mvc.Rendering. The Upsert post method was commented out for
+the time being.
+
+Moving on, the API call was modified to include the Category and CoverType properties. An Index view was added, 
+with the Index.cshtml code copied from Views/Category and modified to the Product List header. A new Product was
+created, and properties such as Title, ISBN, Price, Author, and Category were added and referenced in a new
+
+product.js file.
+
+The category.js was copied and renamed as product.js. The _Layout.cshtml was modified to add a new link to Product.
+The application was run to check if it was still working, and it was.
+
+
+Finally, everything was pushed and updated to GitHub, and the application was closed for the day.
+
+
 
