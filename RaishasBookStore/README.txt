@@ -307,7 +307,7 @@ I commented out the Upsert post method for now as for the tutorial. Then, I modi
 
 Moving on, I added an Index view. Copied the Index.cshtml code from Views/Category and modified to the Product List header,
 Created a New Product and added the following properties 
-– Title / ISBN / Price / Author / Category and referenced a new product.js file.
+– Title / ISBN / Price / Author / Category and referenced a new product.js file.  
 Where, my js file has still not been working yet but decided to fix it as I go through the project so MOVING ON!
 
 1720
