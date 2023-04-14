@@ -234,6 +234,66 @@ Then Added CoverType.cs in the Model’s folder
 and added CoverType Model ID, Name.
 
 
+2023-04-13
+
+1224
+
+Back to working on the MVC Application, starting up with Assignment II Part 1.
+
+I started off with creating a cover Type Crud with the exact same methods I used for category CRUD. 
+I then added CoverType.cs in the Model's folder. CoverType Model, ID and Name. 
+
+1235
+
+Moving on with adding a CoverType to the Repository, CoverTypeRepository Class and, 
+ICoverTypeRepository Interface, CoverType to UnitOfWork and IUnitofWork
+Then I had to Push CoverType to the Database (Create migration and update the DB)..
+
+Next, I had to Add CoverType to the Repository. And CoverTypeRepository Class,
+ICoverTypeRepository Interface, and CoverType to UnitOfWork and IUnitofWork.
+Moving on to Pushing the CoverType to the Database (Create migration and update the DB).
+
+
+1349
+
+After a short lunch break, and looking through what I need to be doing next up in the project 
+I am ready to get started on the application. 
+
+Part 3
+3.2 
+
+1355
+
+First I Added a new class (Product) in the .Models project. Then, I also added the code to build the
+blueprint of this class and make sure it’s “public” and that any errors are resolved.
+
+Next up I am Adding reference to the new Products piece to the database in the ApplicationDbContext.cs file.
+And, in the PM Console, I ran the add-migration command for an  ‘addProductToDb’ migration and update-database.
+
+
+Then I updated the Product class so Title, ISBN and Author are [Required], later created a new migration
+(addValidationToProduct) and updated the database.
+
+1432
+
+After this I added Product to the Repository, and added IProductRepository Interface.
+Also adding ProductRepository Class.I Then added Product to UnitOfWork and IUnitofWork.
+
+
+After all this I Built and checked for errors, Thankfully, no errors so I pushed it to GitHub.
+
+
+
+
+*Product Controller / JS / Index view and Upsert View / Post / Action to follow
+
+
+
+
+
+
+
+
 
 
 
