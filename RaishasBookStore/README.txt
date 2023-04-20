@@ -319,6 +319,8 @@ I Ran the application to see if it was still working, and it was.
 
 Pushing and updating everything to GitHub, abd closing up the application for now. 
 
+------------------
+
 
 2023-04-18
 
@@ -392,6 +394,10 @@ on Startup.cs page line 70..
 
 Where I figured as the comments say " could possibly be updated in the future. " Where I had to change 
 Category into Product and the error ws solved!
+
+I ran the projec to check and see if it was working, when I made a confirmation that it was I stopped.
+
+Will come back for Part 5!!
 
 
 
