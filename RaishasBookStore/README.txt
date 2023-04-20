@@ -386,6 +386,9 @@ Also, the delete button in the productList is not working, so trying to solve th
 
 2132
 
+The error on the delete button(ProductList ) turned out to be a typing error, whcih I fixed and now the  application is working smoothly.
+
+
 Looking through the files if I can find anything that can help me solve the error, where I found a comment 
 on Startup.cs page line 70..
 
