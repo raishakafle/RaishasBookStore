@@ -370,7 +370,7 @@ some changes in there in order to solve the error.
 
 I changed the name "Categpory" into "ProductType", where all the errors I was facing faded away!!
 
-Tried running the application after this, and is working pretty smooth!
+Tried running the application after this, and is working pretty smooth!   
 
 
 
