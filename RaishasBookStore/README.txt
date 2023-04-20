@@ -382,6 +382,8 @@ Almost done with the project, now have to display the ProductList (productindex.
 Whenever the page loads the ProductList needs to be the one that loads as the home page. Trying to 
 figure out ways to look through it.
 
+Also, the delete button in the productList is not working, so trying to solve this error as well.
+
 2132
 
 Looking through the files if I can find anything that can help me solve the error, where I found a comment 
