@@ -12,12 +12,12 @@ namespace RaishasBookStore.Areas.Admin.Controllers
     public class ProductController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
-        private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly IWebHostEnvironment _hostEnvironment;
 
-        public ProductController(IUnitOfWork unitOfWork, IWebHostEnvironment webHostEnvironment)
+        public ProductController(IUnitOfWork unitOfWork, IWebHostEnvironment hostEnvironment)
         {
             _unitOfWork = unitOfWork;
-            _webHostEnvironment = webHostEnvironment;
+            _hostEnvironment = hostEnvironment;
         }
 
         public IActionResult Index()
@@ -34,42 +34,57 @@ namespace RaishasBookStore.Areas.Admin.Controllers
                 {
                     Text = i.Name,
                     Value = i.Id.ToString()
-
                 }),
-
                 CoverTypeList = _unitOfWork.CoverType.GetAll().Select(i => new SelectListItem
                 {
                     Text = i.Name,
                     Value = i.Id.ToString()
-
-                }),
+                })
             };
-
             if (id == null)
             {
+                // this is for create
                 return View(productVM);
             }
-
+            // this is for edit
             productVM.Product = _unitOfWork.Product.Get(id.GetValueOrDefault());
             if (productVM.Product == null)
             {
                 return NotFound();
             }
             return View(productVM);
-
         }
 
-        //API  Calls Here
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Upsert(Product product)
+        {
+            if (ModelState.IsValid)
+            {
+                if (product.Id == 0)
+                {
+                    _unitOfWork.Product.Add(product);
+                }
+                else
+                {
+                    _unitOfWork.Product.Update(product);
+                }
+                _unitOfWork.Save();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(product);
+        }
+
         #region API CALLS
+
         [HttpGet]
         public IActionResult GetAll()
         {
-            var allObj = _unitOfWork.Product.GetAll(includeProperties: "Category, Covertype");
+            var allObj = _unitOfWork.Product.GetAll(includeProperties: "Category,CoverType");
             return Json(new { data = allObj });
         }
 
         [HttpDelete]
-
         public IActionResult Delete(int id)
         {
             var objFromDb = _unitOfWork.Product.Get(id);
@@ -80,10 +95,9 @@ namespace RaishasBookStore.Areas.Admin.Controllers
 
             _unitOfWork.Product.Remove(objFromDb);
             _unitOfWork.Save();
-            return Json(new { success = true, message = "Delete successful" });
+            return Json(new { success = true, message = "Delete Successful" });
         }
+
         #endregion
-
-
     }
 }

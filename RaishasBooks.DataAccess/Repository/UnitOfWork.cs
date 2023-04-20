@@ -18,6 +18,7 @@ namespace RaishasBooks.DataAccess.Repository
             Category = new CategoryRepository(_db);
             SP_Call = new SP_Call(db);
             CoverType= new CoverTypeRepository(_db);
+            Product = new ProductRepository(_db);
        
         }
 

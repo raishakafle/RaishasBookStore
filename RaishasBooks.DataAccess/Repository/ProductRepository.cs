@@ -1,4 +1,5 @@
-﻿using RaishasBooks.Models;
+﻿using RaishasBooks.DataAccess.Repository.IRepository;
+using RaishasBooks.Models;
 using RaishasBookStore.DataAccess.Data;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Text;
 
 namespace RaishasBooks.DataAccess.Repository
 {
-    public class ProductRepository : Repository<Product>
+    public class ProductRepository : Repository<Product>, IProductRepository
     {
         private readonly ApplicationDbContext _db;
         public ProductRepository(ApplicationDbContext db) : base(db)
