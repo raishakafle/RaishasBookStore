@@ -68,7 +68,7 @@ namespace RaishasBookStore
                 endpoints.MapControllerRoute(
                     name: "default",
                     //This is the default route pattern that could possibly be updated in the future. 
-                    pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{area=Admin}/{controller=Product}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }

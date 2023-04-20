@@ -54,26 +54,22 @@ namespace RaishasBookStore.Areas.Admin.Controllers
 
                 _unitOfWork.Save();
                 return RedirectToAction(nameof(Index));  //To see all the categories
-                return RedirectToAction(nameof(Index));  
+                
             }
 
             return View(category);
         }
 
         // API calls here
-        #region API CALLS
-        [HttpGet]
+         [HttpGet]
+        #region
         public IActionResult GetAll()
         {
-
             var allObj = _unitOfWork.Category.GetAll();
             return Json(new { data = allObj });
-
-
-
         }
-        [HttpDelete]
 
+        [HttpDelete]
         public IActionResult Delete(int id)
         {
             var objFromDb = _unitOfWork.Category.Get(id);
@@ -83,9 +79,10 @@ namespace RaishasBookStore.Areas.Admin.Controllers
             }
             _unitOfWork.Category.Remove(objFromDb);
             _unitOfWork.Save();
-            return Json(new { success = true, message = "Delete successful" });
-
+            return Json(new { success = true, message = "Delete Successful" });
         }
+
         #endregion
+        
     }
 }
