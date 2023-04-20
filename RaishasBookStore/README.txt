@@ -320,6 +320,61 @@ I Ran the application to see if it was still working, and it was.
 Pushing and updating everything to GitHub, abd closing up the application for now. 
 
 
+2023-04-18
+
+2253
+
+Starting off with creating an upsert.cs for Products file.
+
+Which I modified in the areas> Admin> Views > Product. 
+
+After which, I added a rich textbox to the textarea inside Product, with tiny.cloud I also created an
+account, using the API key provided.
+
+
+Later on, I went on to initialize and add a function to validate input and if empty, displayed  
+a SweetAlert. 
+
+I checked to see if the application was running which it was, Thankfully!
+
+I tried to create a new product, which showed on the application, but was not updating on the database, 
+so had to fix that error that was showing up.
+
+
+
+2023-04-19
+
+1842
+
+Later on, I went on adding a new folder and a sub folder along with it inside the wwwroot > images > products
+folder.
+
+Furthermore, inside of the ProductController configure folder the product Upsert Post action method. 
+During the events going on I tried running the program, which showed a lot of errors, 
+
+Working on the error trying to figure out the problem. 
+
+1921
+
+Figured out the error, the name category had been showing up in case of ProductType, which is why
+the system was throwing up so much errors on me. 
+
+Looking for solutions to figure this!!!
+
+2023
+
+Still working on finding a solution for the error. 
+
+Working on the solution for a while, where I finally figured I could get into the sql database and make 
+some changes in there in order to solve the error. 
+
+I changed the name "Categpory" into "ProductType", where all the errors I was facing faded away!!
+
+Tried running the application after this, and is working pretty smooth!
+
+
+
+
 
 
 
