@@ -375,11 +375,23 @@ Tried running the application after this, and is working pretty smooth!
 
 2122
 
-Almost done with the project, now have to display the ProductList as the main page 
+Almost done with the project, now have to display the ProductList (productindex.cshtml) as the main page 
 
 Whenever the page loads the ProductList needs to be the one that loads as the home page. Trying to 
 figure out ways to look through it.
 
+2132
+
+Looking through the files if I can find anything that can help me solve the error, where I found a comment 
+on Startup.cs page line 70..
+
+                    //This is the default route pattern that could possibly be updated in the future. 
+                    pattern: "{area=Admin}/{controller=Product}/{action=Index}/{id?}");
+                endpoints.MapRazorPages();
+            });
+
+Where I figured as the comments say " could possibly be updated in the future. " Where I had to change 
+Category into Product and the error ws solved!
 
 
 
