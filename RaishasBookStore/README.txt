@@ -429,6 +429,17 @@ Then into the Areas> Customer> Views folder. I updated the code.
 
 I tried to see if the website was working which it was so I pushed it into GitHub.
 
+The website works smoothly without any named error, the image however does not seem to be showing in the home page. 
+
+1509
+
+One of the weird happenings on the project is how the name in my GitHub Repository is named AndrewsBookModels, and AndrewsBookUtility. 
+Whatsoever, when I open up the code into Visual Studio 2019, the folder updates itself as RaishasBookModels, and RaishasBookUtility. 
+
+Not an error looks more like a glitch, which I have tried to fix but is not working!!
+
+Looks like we are done with assignment. Now uploading the assignment into Azure for that One Bonus Mark, which hopefully I will get :)
+
 
 
 
