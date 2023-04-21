@@ -425,7 +425,9 @@ Starting off the final part, inside the Areas folder, into the controllers folde
 
 1500
 
+Then into the Areas> Customer> Views folder. I updated the code. 
 
+I tried to see if the website was working which it was so I pushed it into GitHub.
 
 
 
