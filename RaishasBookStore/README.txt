@@ -407,6 +407,31 @@ Will come back for Part 5!!
 
 
 
+2023-04-21
+
+1430
+
+Starting off the final part, inside the Areas folder, into the controllers folder, I made changes in the HomeController.cs file.
+
+ public IActionResult Index()
+        {
+            IEnumerable<Product> productList = _unitOfWork.Product.GetAll(includeProperties: "Category,CoverType");
+            return View(productList);
+        }
+
+
+        Here I made changes to View. 
+
+
+1500
+
+
+
+
+
+
+
+
 
 
 
